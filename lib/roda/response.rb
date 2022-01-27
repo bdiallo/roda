@@ -106,6 +106,8 @@ class Roda
             h["Content-Length"] ||= @length.to_s
           end
 
+puts "====> gem clone roda finish body #{b.inspect}"
+puts "====> gem clone roda finish \n#{Thread.current.backtrace}"
           [s, h, b]
         end
 
